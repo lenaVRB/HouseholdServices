@@ -30,6 +30,9 @@ namespace HouseholdServices.Entities
 
         public DateTime? DateCreated { get; set; }
 
+        [StringLength(50)]
+        public string Salt { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserRole> UserRoles { get; set; }
     }

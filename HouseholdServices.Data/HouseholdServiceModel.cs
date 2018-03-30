@@ -12,17 +12,18 @@ namespace HouseholdServices.Data
         public HouseholdServiceModel()
             : base("name=HouseholdServiceModel")
         {
+            Database.SetInitializer<HouseholdServiceModel>(null);
         }
 
-        public virtual DbSet<Customer> Customers { get; set; }
-        public virtual DbSet<Error> Errors { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<OrderService> OrderServices { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<Service> Services { get; set; }
-        public virtual DbSet<ServiceType> ServiceTypes { get; set; }
-        public virtual DbSet<UserRole> UserRoles { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public IDbSet<Customer> Customers { get; set; }
+        public IDbSet<Error> Errors { get; set; }
+        public IDbSet<Order> Orders { get; set; }
+        public IDbSet<OrderService> OrderServices { get; set; }
+        public IDbSet<Role> Roles { get; set; }
+        public IDbSet<Service> Services { get; set; }
+        public IDbSet<ServiceType> ServiceTypes { get; set; }
+        public IDbSet<UserRole> UserRoles { get; set; }
+        public IDbSet<User> Users { get; set; }
 
         public virtual void Commit()
         {

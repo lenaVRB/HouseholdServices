@@ -14,8 +14,7 @@ namespace HouseholdServices.Data.Configurations
             Property(e => e.FirstName).IsUnicode(false);
             Property(e => e.LastName).IsUnicode(false);
             Property(e => e.Email).IsUnicode(false);
-            Property(e => e.Mobile).IsUnicode(false);
-            Property(e => e.Salt).IsUnicode(false);
+            Property(e => e.Mobile).IsUnicode(false);          
             HasMany(e => e.Orders)
                 .WithRequired(e => e.Customer)
                 .WillCascadeOnDelete(false);

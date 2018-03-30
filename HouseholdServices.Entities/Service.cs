@@ -22,8 +22,8 @@ namespace HouseholdServices.Entities
         [Column(TypeName = "money")]
         public decimal? Price { get; set; }
 
-        [Column(TypeName = "image")]
-        public byte[] Image { get; set; }
+        [StringLength(50)]
+        public string Image { get; set; }
 
         [Column(TypeName = "text")]
         public string Description { get; set; }
