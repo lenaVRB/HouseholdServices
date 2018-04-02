@@ -7,7 +7,7 @@ namespace HouseholdServices.Entities
     [Table("Error")]
     public partial class Error : IEntityBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [Required]

@@ -5,7 +5,7 @@ namespace HouseholdServices.Entities
 
     public partial class OrderService : IEntityBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         public int OrderID { get; set; }

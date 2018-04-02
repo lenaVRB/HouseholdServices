@@ -9,7 +9,7 @@ namespace HouseholdServices.Entities
 {
     public interface IEntityBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         int ID { get; set; }
     }
 }

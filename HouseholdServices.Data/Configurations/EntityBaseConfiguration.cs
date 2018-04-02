@@ -12,7 +12,7 @@ namespace HouseholdServices.Data.Configurations
     {
         public EntityBaseConfiguration()
         {
-            HasKey(e => e.ID);
+            
         }
     }
 }

@@ -12,7 +12,7 @@ namespace HouseholdServices.Entities
             UserRoles = new List<UserRole>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [Required]

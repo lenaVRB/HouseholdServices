@@ -4,7 +4,7 @@ namespace HouseholdServices.Entities
 
     public partial class UserRole : IEntityBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         public int UserID { get; set; }

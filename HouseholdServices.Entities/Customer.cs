@@ -13,7 +13,7 @@ namespace HouseholdServices.Entities
             Orders = new List<Order>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [Required]

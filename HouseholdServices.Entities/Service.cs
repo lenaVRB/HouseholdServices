@@ -12,7 +12,7 @@ namespace HouseholdServices.Entities
             OrderServices = new List<OrderService>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [Required]

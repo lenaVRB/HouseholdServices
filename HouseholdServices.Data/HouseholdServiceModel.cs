@@ -12,7 +12,7 @@ namespace HouseholdServices.Data
         public HouseholdServiceModel()
             : base("name=HouseholdServiceModel")
         {
-            Database.SetInitializer<HouseholdServiceModel>(null);
+          Database.SetInitializer<HouseholdServiceModel>(null);
         }
 
         public IDbSet<Customer> Customers { get; set; }

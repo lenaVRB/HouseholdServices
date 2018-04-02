@@ -12,7 +12,7 @@ namespace HouseholdServices.Entities
             Services = new List<Service>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
         [StringLength(50)]

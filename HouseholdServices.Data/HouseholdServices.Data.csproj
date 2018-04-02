@@ -73,9 +73,13 @@
     <Compile Include="Infrastructure\IDbFactory.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201803301313372_first-migration.cs" />
-    <Compile Include="Migrations\201803301313372_first-migration.Designer.cs">
-      <DependentUpon>201803301313372_first-migration.cs</DependentUpon>
+    <Compile Include="Migrations\201804022238009_Initial.cs" />
+    <Compile Include="Migrations\201804022238009_Initial.Designer.cs">
+      <DependentUpon>201804022238009_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804022252587_Add-data.cs" />
+    <Compile Include="Migrations\201804022252587_Add-data.Designer.cs">
+      <DependentUpon>201804022252587_Add-data.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,8 +101,11 @@
     <Content Include="uk\MockData.resources.dll" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803301313372_first-migration.resx">
-      <DependentUpon>201803301313372_first-migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804022238009_Initial.resx">
+      <DependentUpon>201804022238009_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804022252587_Add-data.resx">
+      <DependentUpon>201804022252587_Add-data.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
