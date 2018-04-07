@@ -98,7 +98,7 @@ namespace HouseholdServices.Services
             var membershipContext = new MembershipContext();
             var user = _userRepository.GetSingleByUsername(username);
 
-            if(user!=null && isUserValid(user, password))
+            if (user != null && isUserValid(user, password))
             {
                 var userRoles = GetUserRoles(user.Username);
                 membershipContext.User = user;
@@ -107,9 +107,9 @@ namespace HouseholdServices.Services
                 membershipContext.Principal = new GenericPrincipal(
                     identity,
                     userRoles.Select(x => x.Name).ToArray());
-
-                return membershipContext;
             }
+                return membershipContext;
+            
         }
 
         #endregion
