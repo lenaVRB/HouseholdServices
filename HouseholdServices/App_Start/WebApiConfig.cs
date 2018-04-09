@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HouseholdServices.Infrastructure.MessageHandlers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,7 +11,7 @@ namespace HouseholdServices
         public static void Register(HttpConfiguration config)
         {
             // Конфигурация и службы веб-API
-
+            config.MessageHandlers.Add(new HouseholdServicesAuthHandler());
             // Маршруты веб-API
             config.MapHttpAttributeRoutes();
 
