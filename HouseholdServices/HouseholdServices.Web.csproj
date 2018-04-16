@@ -1009,10 +1009,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
+    <Compile Include="Infrastructure\Core\PaginationSet.cs" />
+    <Compile Include="Infrastructure\Extensions\EntitiesExtension.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtension.cs" />
     <Compile Include="Infrastructure\MessageHandlers\HouseholdServicesAuthHandler.cs" />
     <Compile Include="Infrastructure\Validators\ServiceViewModelValidator.cs" />

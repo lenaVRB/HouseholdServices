@@ -12,8 +12,9 @@ namespace HouseholdServices.Infrastructure.Validators
         public ServiceViewModelValidator()
         {
             RuleFor(service => service.Description).NotEmpty().WithMessage("Select a description!");
-            RuleFor(service =>service.ServiceTypeId).GreaterThan(0)
+            RuleFor(service =>service.ServiceTypeID).GreaterThan(0)
                 .WithMessage("Select a service type!");
+
         }
     }
 }

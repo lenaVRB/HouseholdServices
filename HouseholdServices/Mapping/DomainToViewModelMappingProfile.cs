@@ -14,7 +14,7 @@ namespace HouseholdServices.Mapping
         { 
             CreateMap<Service, ServiceViewModel>()
                 .ForMember(vm => vm.ServiceType, map => map.MapFrom(s => s.ServiceType.Name))
-                .ForMember(vm => vm.ServiceTypeId, map => map.MapFrom(s => s.ServiceType.ID))
+                .ForMember(vm => vm.ServiceTypeID, map => map.MapFrom(s => s.ServiceType.ID))
                 .ForMember(vm => vm.Image, map => map.MapFrom(s => s.Image));
 
             CreateMap<ServiceType, ServiceTypeViewModel>()
