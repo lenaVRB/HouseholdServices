@@ -1015,6 +1015,9 @@
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtension.cs" />
     <Compile Include="Infrastructure\MessageHandlers\HouseholdServicesAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validators\ServiceViewModelValidator.cs" />
+    <Compile Include="Mapping\AutoMapperConfiguration.cs" />
+    <Compile Include="Mapping\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Models\ServiceViewModel.cs" />
     <Compile Include="Models\ServiceTypeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

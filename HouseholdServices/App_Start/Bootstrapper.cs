@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using AutoMapper;
+using HouseholdServices.Mapping;
 
 namespace HouseholdServices.App_Start
 {
@@ -14,7 +15,7 @@ namespace HouseholdServices.App_Start
             //Configure Autofac
             AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration);
             //Configure Automapper
-            
+            AutoMapperConfiguration.Configure();
         }
     }
 }
