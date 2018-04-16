@@ -179,6 +179,7 @@
     <Content Include="Scripts\spa\layout\topbar.directive.js" />
     <Content Include="Scripts\spa\layout\topbar.html" />
     <Content Include="Scripts\spa\services\apiService.js" />
+    <Content Include="Scripts\spa\services\membershipService.js" />
     <Content Include="Scripts\spa\services\notificationService.js" />
     <Content Include="Scripts\vendors\angular-animate.js" />
     <Content Include="Scripts\vendors\angular-animate.min.js" />
@@ -1008,6 +1009,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\ServiceTypesController.cs" />
@@ -1019,9 +1021,13 @@
     <Compile Include="Infrastructure\Extensions\EntitiesExtension.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtension.cs" />
     <Compile Include="Infrastructure\MessageHandlers\HouseholdServicesAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validators\LoginViewModelValidator.cs" />
+    <Compile Include="Infrastructure\Validators\RegistrationViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\ServiceViewModelValidator.cs" />
     <Compile Include="Mapping\AutoMapperConfiguration.cs" />
     <Compile Include="Mapping\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\RegistrationViewModel.cs" />
     <Compile Include="Models\ServiceViewModel.cs" />
     <Compile Include="Models\ServiceTypeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
