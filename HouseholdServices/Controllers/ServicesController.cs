@@ -46,6 +46,8 @@ namespace HouseholdServices.Controllers
             });
         }
 
+        
+
         [AllowAnonymous]
         [Route("{page:int=0}/{pageSize=3}/{filter?}")]
         public HttpResponseMessage Get(HttpRequestMessage request, int? page, int? pageSize, string filter = null)
