@@ -83,9 +83,9 @@ namespace HouseholdServices.Controllers
                 }
                 else
                 {
-                    if (_customersRepository.UserExists(customer.Email)
+                    if (_customersRepository.UserExists(customer.Email))
                     {
-                        ModelState.AddModelError("Invalid user", "Email or Identity Card number already exists");
+                        ModelState.AddModelError("Invalid user", "Email already exists");
                         response = request.CreateResponse(HttpStatusCode.BadRequest,
                         ModelState.Keys.SelectMany(k => ModelState[k].Errors)
                               .Select(m => m.ErrorMessage).ToArray());
@@ -154,7 +154,6 @@ namespace HouseholdServices.Controllers
                     filter = filter.Trim().ToLower();
 
                     customers = _customersRepository.FindBy(c => c.LastName.ToLower().Contains(filter) ||
-                            c.IdentityCard.ToLower().Contains(filter) ||
                             c.FirstName.ToLower().Contains(filter))
                         .OrderBy(c => c.ID)
                         .Skip(currentPage * currentPageSize)
@@ -162,8 +161,7 @@ namespace HouseholdServices.Controllers
                         .ToList();
 
                     totalCustomers = _customersRepository.GetAll()
-                        .Where(c => c.LastName.ToLower().Contains(filter) ||
-                            c.IdentityCard.ToLower().Contains(filter) ||
+                        .Where(c => c.LastName.ToLower().Contains(filter) ||                          
                             c.FirstName.ToLower().Contains(filter))
                         .Count();
                 }
@@ -196,5 +194,4 @@ namespace HouseholdServices.Controllers
     }
 
 
-}
 }

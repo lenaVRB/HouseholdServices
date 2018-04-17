@@ -41,7 +41,7 @@
 
         function registerCustomerFailed(response) {
             console.log(response);
-            if (response.status == '400')
+            if (response.status === '400')
                 $scope.submission.errorMessages = response.data;
             else
                 $scope.submission.errorMessages = response.statusText;

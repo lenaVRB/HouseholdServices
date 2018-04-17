@@ -57,7 +57,7 @@
         }
 
         function isUserLoggedIn() {
-            return $rootScope.repository.loggedUser != null;
+            return $rootScope.repository.loggedUser !== null;
         }
 
         return service;
