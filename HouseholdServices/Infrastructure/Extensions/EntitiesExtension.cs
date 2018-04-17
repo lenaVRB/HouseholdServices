@@ -16,5 +16,15 @@ namespace HouseholdServices.Infrastructure.Extensions
             service.ServiceTypeID = serviceVm.ServiceTypeID;
             service.Price = serviceVm.Price;           
         }
+
+        public static void UpdateCustomer(this Customer customer, CustomerViewModel customerVm)
+        {
+            customer.FirstName = customerVm.FirstName;
+            customer.LastName = customerVm.LastName;       
+            customer.Mobile = customerVm.Mobile;
+            customer.DateOfBirth = customerVm.DateOfBirth;
+            customer.Email = customerVm.Email;
+            customer.RegistrationDate = (customer.RegistrationDate == DateTime.MinValue ? DateTime.Now : customerVm.RegistrationDate);
+        }
     }
 }

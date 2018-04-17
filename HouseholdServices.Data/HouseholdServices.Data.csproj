@@ -85,6 +85,7 @@
     <Compile Include="Configurations\ServiceTypeConfiguration.cs" />
     <Compile Include="Configurations\UserConfiguration.cs" />
     <Compile Include="Configurations\UserRoleConfiguration.cs" />
+    <Compile Include="Extensions\CustomerExtension.cs" />
     <Compile Include="Extensions\UserExtension.cs" />
     <Compile Include="HouseholdServiceModel.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />

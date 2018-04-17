@@ -1,10 +1,15 @@
-﻿using HouseholdServices.Data.Infrastructure;
+﻿using AutoMapper;
+using HouseholdServices.Data.Extensions;
+using HouseholdServices.Data.Infrastructure;
 using HouseholdServices.Data.Repositories;
 using HouseholdServices.Entities;
 using HouseholdServices.Infrastructure.Core;
+using HouseholdServices.Infrastructure.Extensions;
+using HouseholdServices.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
@@ -78,7 +83,7 @@ namespace HouseholdServices.Controllers
                 }
                 else
                 {
-                    if (_customersRepository.UserExists(customer.Email, customer.IdentityCard))
+                    if (_customersRepository.UserExists(customer.Email)
                     {
                         ModelState.AddModelError("Invalid user", "Email or Identity Card number already exists");
                         response = request.CreateResponse(HttpStatusCode.BadRequest,
