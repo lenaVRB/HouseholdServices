@@ -19,6 +19,9 @@ namespace HouseholdServices.Mapping
 
             CreateMap<ServiceType, ServiceTypeViewModel>()
             .ForMember(vm => vm.NumberOfServices, map => map.MapFrom(st => st.Services.Count()));
+
+            CreateMap<Customer, CustomerViewModel>();
+               
                  
         }
     }

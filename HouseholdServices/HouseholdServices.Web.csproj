@@ -171,6 +171,10 @@
     <Content Include="Scripts\jquery.fancybox.js" />
     <Content Include="Scripts\jquery.fancybox.pack.js" />
     <Content Include="Scripts\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="Scripts\spa\account\login.html" />
+    <Content Include="Scripts\spa\account\loginCtrl.js" />
+    <Content Include="Scripts\spa\account\register.html" />
+    <Content Include="Scripts\spa\account\registerCtrl.js" />
     <Content Include="Scripts\spa\app.js" />
     <Content Include="Scripts\spa\common.ui.js" />
     <Content Include="Scripts\spa\home\rootCtrl.js" />
@@ -1010,6 +1014,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\ServiceTypesController.cs" />
@@ -1021,11 +1026,13 @@
     <Compile Include="Infrastructure\Extensions\EntitiesExtension.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtension.cs" />
     <Compile Include="Infrastructure\MessageHandlers\HouseholdServicesAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validators\CustomerViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\LoginViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\RegistrationViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\ServiceViewModelValidator.cs" />
     <Compile Include="Mapping\AutoMapperConfiguration.cs" />
     <Compile Include="Mapping\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="Models\CustomerViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\RegistrationViewModel.cs" />
     <Compile Include="Models\ServiceViewModel.cs" />

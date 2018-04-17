@@ -1,9 +1,11 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('householdSerivices', ['common.core', 'common.ui']).config(config);
+    angular.module('householdSerivices', ['common.core', 'common.ui'])
+        .config(config)
+        .run(run);
 
-    config.$inject = ['&routeProvider'];
+    config.$inject = ['$routeProvider'];
     function config($routeProvider) {
         $routeProvider
             .when("/", {
