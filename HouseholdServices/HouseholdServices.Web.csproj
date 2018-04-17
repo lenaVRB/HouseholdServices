@@ -177,7 +177,10 @@
     <Content Include="Scripts\spa\account\registerCtrl.js" />
     <Content Include="Scripts\spa\app.js" />
     <Content Include="Scripts\spa\common.ui.js" />
+    <Content Include="Scripts\spa\customers\customers.html" />
+    <Content Include="Scripts\spa\customers\customersCtrl.js" />
     <Content Include="Scripts\spa\home\rootCtrl.js" />
+    <Content Include="Scripts\spa\layout\pager.html" />
     <Content Include="Scripts\spa\layout\sidebar.directive.js" />
     <Content Include="Scripts\spa\layout\sidebar.html" />
     <Content Include="Scripts\spa\layout\topbar.directive.js" />
@@ -253,6 +256,7 @@
     <Content Include="Scripts\vendors\angular-aria.min.js.map" />
     <Content Include="Scripts\vendors\angular-animate.min.js.map" />
     <Content Include="Scripts\spa\common.core.js" />
+    <Content Include="Scripts\spa\layout\customPager.directive" />
     <None Include="Scripts\vendors\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
