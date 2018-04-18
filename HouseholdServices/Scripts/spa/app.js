@@ -30,21 +30,21 @@
                 resolve: { isAuthenticated: isAuthenticated }
             })
             .when("/services", {
-                templateUrl: "scripts/spa/services/services.html",
+                templateUrl: "scripts/spa/householdServ/services.html",
                 controller: "servicesCtrl"
             })
             .when("/services/add", {
-                templateUrl: "scripts/spa/services/add.html",
+                templateUrl: "scripts/spa/householdServ/add.html",
                 controller: "serviceAddCtrl",
                 resolve: { isAuthenticated: isAuthenticated }
             })
             .when("/services/:id", {
-                templateUrl: "scripts/spa/services/details.html",
+                templateUrl: "scripts/spa/householdServ/details.html",
                 controller: "serviceDetailsCtrl",
                 resolve: { isAuthenticated: isAuthenticated }
             })
             .when("/services/edit/:id", {
-                templateUrl: "scripts/spa/services/edit.html",
+                templateUrl: "scripts/spa/householdServ/edit.html",
                 controller: "serviceEditCtrl"
             })
             .when("/order", {
