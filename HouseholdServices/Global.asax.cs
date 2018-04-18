@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 using HouseholdServices.App_Start;
+using System.Web.Optimization;
 
 namespace HouseholdServices
 {
@@ -16,12 +17,13 @@ namespace HouseholdServices
         void Application_Start(object sender, EventArgs e)
         {
             var config = GlobalConfiguration.Configuration;
+
             AreaRegistration.RegisterAllAreas();
             WebApiConfig.Register(config);
             Bootstrapper.Run();
-           // GlobalConfiguration.Configuration.EnsureInitialized(); ???
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            GlobalConfiguration.Configuration.EnsureInitialized();
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }
