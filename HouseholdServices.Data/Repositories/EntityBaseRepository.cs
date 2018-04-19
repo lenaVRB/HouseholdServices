@@ -40,9 +40,10 @@ namespace HouseholdServices.Data.Repositories
                 return GetAll();
             }
         }
-        public void Add(T entity)
+        public virtual void Add(T entity)
         {
-            throw new NotImplementedException();
+            DbEntityEntry dbEntityEntry = DbContext.Entry<T>(entity);
+            DbContext.Set<T>().Add(entity);
         }
 
         public virtual IQueryable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties)
